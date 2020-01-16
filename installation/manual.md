@@ -13,11 +13,11 @@ If you're trying to install and use Directus on a shared host, please read the n
 Directus requires PHP and MySQL to run properly. That means that a wide variety of webservers, operating systems, and versions are able to run Directus. That being said, we can't promise that Directus will run smoothly in every possible combination of environments. Therefore, we only _officially_ support LAMP stacks.
 
 | Software | Minimum version |
-|----------|-----------------|
+| -------- | --------------- |
 | Linux    | Ubuntu 18.04    |
 | Apache   | 2.4             |
 | MySQL    | 5.7+            |
-| PHP      | 7.2+            |
+| PHP      | 7.3+            |
 
 ::: tip PHP Extensions
 The following PHP extensions (typically enabled by default) are also required: `pdo`, `mysql`, `curl`, `gd`, `fileinfo`, `mbstring`, and `xml`.

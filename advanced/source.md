@@ -8,22 +8,21 @@ In order to work on the API, you'll need to install the source version locally. 
 
 ### Requirements
 
-* A HTTP Web Server that supports URL rewrites
-    * _Comes with .htaccess included for Apache_
-* MySQL 5.7+
-    * Database (empty or existing)
-    * Database User (with access to database)
-* PHP 7.2+
-    * `pdo` + `mysql`
-    * `curl`
-    * `gd`
-    * `fileinfo`
-    * `mbstring`
-    * `xml` (Only if you are installing phpunit)
-* [Node.js](https://nodejs.org) v8.11.3 or higher (preferably v10.6+)
-* [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to fetch the source code from GitHub
-* [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) to install dependencies
-
+- A HTTP Web Server that supports URL rewrites
+  - _Comes with .htaccess included for Apache_
+- MySQL 5.7+
+  - Database (empty or existing)
+  - Database User (with access to database)
+- PHP 7.3+
+  - `pdo` + `mysql`
+  - `curl`
+  - `gd`
+  - `fileinfo`
+  - `mbstring`
+  - `xml` (Only if you are installing phpunit)
+- [Node.js](https://nodejs.org) v8.11.3 or higher (preferably v10.6+)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to fetch the source code from GitHub
+- [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) to install dependencies
 
 ### Setup Steps
 
@@ -72,9 +71,9 @@ This file comes with the boilerplate schema as well as some dummy collections, f
 ::: tip Credentials
 If you are skipping the installer and adding the SQL directly to your database, the default login credentials are:
 
-* **User:** `admin@example.com`
-* **Password:** `password`
-:::
+- **User:** `admin@example.com`
+- **Password:** `password`
+  :::
 
 #### 4. Config File Installer
 

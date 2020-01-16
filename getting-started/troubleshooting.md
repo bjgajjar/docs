@@ -12,19 +12,19 @@ If you're having difficulty getting Directus up-and-running, this setup checklis
 
 1. **Does your server meet the minimum requirements**
 
-    - Apache 2
-    - PHP 7.2+
-    - MySQL 5.7+
+   - Apache 2
+   - PHP 7.3+
+   - MySQL 5.7+
 
 2. **Are all the required PHP Extensions enabled?**
 
-    - `pdo`
-    - `mysql`
-    - `curl`
-    - `gd`
-    - `fileinfo`
-    - `mbstring`
-    - `xml`
+   - `pdo`
+   - `mysql`
+   - `curl`
+   - `gd`
+   - `fileinfo`
+   - `mbstring`
+   - `xml`
 
 3. **Is `mod_rewrite` enabled? Do `.htaccess` files work?** — [DigitalOcean Guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_rewrite#Section%202)
 
@@ -32,21 +32,21 @@ If you're having difficulty getting Directus up-and-running, this setup checklis
 
 5. **Is the directory ownership set to the web server configured user?** — Usually the user is `www-data`. You can change the ownership of a directory (cascading) using this command:
 
-    ```bash
-    # sudo permissions required
-    #
-    # the -R flag indicates recursive execution of this change (all contents within the directory will also be changed)
-    #
-    # www-data:www-data means the user AND group owners will be set to www-data i.e. <user>:<group>
-    #
-    # /var/www/api is our example directory
-    sudo chown -R www-data:www-data /var/www/directus
-    ```
+   ```bash
+   # sudo permissions required
+   #
+   # the -R flag indicates recursive execution of this change (all contents within the directory will also be changed)
+   #
+   # www-data:www-data means the user AND group owners will be set to www-data i.e. <user>:<group>
+   #
+   # /var/www/api is our example directory
+   sudo chown -R www-data:www-data /var/www/directus
+   ```
 
 6. **Do the following folders have write permission?**
 
-    - `/logs`
-    - `/public/uploads` (or your configured upload directory)
+   - `/logs`
+   - `/public/uploads` (or your configured upload directory)
 
 7. **Are you using the [latest release of Directus](https://github.com/directus/directus/releases)?**
 
