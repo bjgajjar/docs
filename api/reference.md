@@ -158,6 +158,7 @@ The API uses numeric codes to avoid the need for translated error messages based
 - `0401` - Unknown Data Type (400)
 - `0402` - Field Type Missing Length (422)
 - `0403` - Field Type Do Not Support Length (422)
+- `0422` - Data truncated for column (422)
 
 #### Mail Error Codes
 
@@ -910,7 +911,7 @@ _Or, for batch creating multiple items:_
 
 #### Relational Data
 
-##### 1. O2M 
+##### 1. O2M
 
 A single item or an array of multiple items to be created. Field keys must match the collection's column names.
 
@@ -955,7 +956,7 @@ A single item or an array of multiple items to be created. Field keys must match
     ]
 }
 ```
-##### 2. M2O 
+##### 2. M2O
 
 A single item to be created. Field key must match the collection's column name.
 
@@ -965,7 +966,7 @@ A single item to be created. Field key must match the collection's column name.
     "category": 1
 }
 ```
-##### 3. M2M 
+##### 3. M2M
 
 A single item or an array of multiple items to be created. Field keys must match the collection's column names.
 
